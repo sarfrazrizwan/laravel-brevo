@@ -1,0 +1,48 @@
+{
+  "name": "sarfrazrizwan/laravel-brevo",
+  "description": "A Laravel package that integrates the Brevo PHP SDK for simplified API interactions with Brevo's email, SMS, and marketing automation services.",
+  "keywords": [
+    "laravel",
+    "brevo",
+    "laravel brevo integration",
+    "brevo api",
+    "brevo php sdk",
+    "laravel marketing automation",
+    "laravel email",
+    "laravel sms",
+    "email marketing",
+    "sms marketing",
+    "brevo laravel package"
+  ],
+  "type": "library",
+  "require": {
+    "php": "^7.4|^8.0",
+    "getbrevo/brevo-php": "^1.0.2"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "RizwanSarfraz\\LaravelBrevo\\": "src/",
+      "RizwanSarfraz\\LaravelBrevo\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Rizwan Sarfraz",
+      "email": "rs.mahaar@gmail.com",
+      "homepage": "https://github.com/sarfrazrizwan",
+      "role": "Developer"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RizwanSarfraz\\LaravelBrevo\\BrevoServiceProvider"
+      ]
+    }
+  },
+  "config": {},
+  "require-dev": {
+    "orchestra/testbench": "^6.0"
+  }
+}

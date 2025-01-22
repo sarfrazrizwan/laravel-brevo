@@ -3,7 +3,7 @@
 [![Latest Version](https://img.shields.io/github/v/release/sarfrazrizwan/laravel-brevo.svg)](https://github.com/sarfrazrizwan/laravel-brevo/releases)
 [![License](https://img.shields.io/github/license/sarfrazrizwan/laravel-brevo.svg)](https://github.com/sarfrazrizwan/laravel-brevo/blob/main/LICENSE)
 
-A Laravel package for seamless integration with the [Brevo PHP SDK](https://github.com/getbrevo/brevo-php), enabling access to Brevo's powerful email, SMS, and marketing automation services within your Laravel applications. This package simplifies the use of Brevo's API by providing a clean and easy-to-use interface.
+Laravel Brevo provides seamless integration with the [Brevo PHP SDK](https://github.com/getbrevo/brevo-php), enabling access to Brevo's powerful email, SMS, and marketing automation services within your Laravel applications. This package simplifies the use of Brevo's API by providing a clean and easy-to-use interface.
 
 ## Features
 

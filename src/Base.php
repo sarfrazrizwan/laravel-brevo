@@ -7,12 +7,12 @@ use GuzzleHttp\Client;
 
 class Base
 {
-    protected $client;
+    protected Client $client;
     protected Configuration $config;
 
     public function __construct()
     {
-        $this->config = Configuration::getDefaultConfiguration()->setApiKey('api-key',config('brevo.api_key'));
+        $this->config = Configuration::getDefaultConfiguration()->setApiKey('api-key', config('brevo.api_key'));
         $this->client = new Client();
     }
 }

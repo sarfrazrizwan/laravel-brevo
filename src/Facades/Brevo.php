@@ -29,7 +29,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Brevo\Client\Api\SMSCampaignsApi smsCampaignsApi()
  * @method static \Brevo\Client\Api\TasksApi tasksApi()
  * @method static \Brevo\Client\Api\TransactionalEmailsApi transactionalEmailsApi()
- * @method static \Brevo\Client\Api\TransactionalSMSApi transactionalSmsApi()
+ * @method static \Brevo\Client\Api\TransactionalSMSApi transactionalSMSApi()
  * @method static \Brevo\Client\Api\TransactionalWhatsAppApi transactionalWhatsAppApi()
  * @method static \Brevo\Client\Api\UserApi userApi()
  * @method static \Brevo\Client\Api\WebhooksApi webhooksApi()
@@ -39,12 +39,7 @@ use Illuminate\Support\Facades\Facade;
  */
 class Brevo extends Facade
 {
-    /**
-     * Get the registered name of the component.
-     *
-     * @return string
-     */
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'brevo';
     }

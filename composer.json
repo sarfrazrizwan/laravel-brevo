@@ -16,13 +16,18 @@
   ],
   "type": "library",
   "require": {
-    "php": "^7.4|^8.0",
-    "getbrevo/brevo-php": "^1.0.2"
+    "php": "^8.1",
+    "getbrevo/brevo-php": "^1.0.2",
+    "illuminate/support": "^10.0|^11.0|^12.0"
   },
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "RizwanSarfraz\\LaravelBrevo\\": "src/",
+      "RizwanSarfraz\\LaravelBrevo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
       "RizwanSarfraz\\LaravelBrevo\\Tests\\": "tests/"
     }
   },
@@ -43,6 +48,11 @@
   },
   "config": {},
   "require-dev": {
-    "orchestra/testbench": "^6.0"
+    "orchestra/testbench": "^8.0|^9.0|^10.0",
+    "larastan/larastan": "^2.0|^3.0"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "analyse": "vendor/bin/phpstan analyse"
   }
 }

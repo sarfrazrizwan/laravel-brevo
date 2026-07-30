@@ -8,6 +8,11 @@
 
 Laravel Brevo provides seamless integration with the [Brevo PHP SDK](https://github.com/getbrevo/brevo-php), enabling access to Brevo's powerful email, SMS, and marketing automation services within your Laravel applications. This package simplifies the use of Brevo's API by providing a clean and easy-to-use interface.
 
+## Requirements
+
+- PHP 8.1 or higher
+- Laravel 10.x, 11.x, or 12.x
+
 ## Features
 
 - **Easy Brevo API Integration**: Access Brevo's email marketing, SMS, transactional emails, and marketing automation APIs.
@@ -89,7 +94,7 @@ Here are some of the APIs you can access via this package:
 - `smsCampaignsApi()`
 - `tasksApi()`
 - `transactionalEmailsApi()`
-- `transactionalSmsApi()`
+- `transactionalSMSApi()`
 - `transactionalWhatsAppApi()`
 - `userApi()`
 - `webhooksApi()`
@@ -101,10 +106,11 @@ If the API key is missing or invalid, the package will throw an `ApiKeyIsMissing
 
 ## Testing
 
-To run the package tests:
+To run the package tests and static analysis:
 
 ```bash
-vendor/bin/phpunit
+composer test
+composer analyse
 ```
 
 ## Contributing
